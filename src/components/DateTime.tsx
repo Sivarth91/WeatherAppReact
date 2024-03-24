@@ -1,5 +1,5 @@
-import {Text, View} from "react-native";
-import {useEffect, useState} from "react";
+import { Text, View } from "react-native";
+import { useEffect, useState } from "react";
 
 export const DateTime = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
