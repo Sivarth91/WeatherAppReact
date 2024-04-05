@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import {DateTime} from "./src/components/DateTime";
+import { StyleSheet, Text, View} from 'react-native';
+import Home from "./src/pages/Home";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World !</Text>
-      <StatusBar style="auto" />
-      <DateTime></DateTime>
+        <Text style={styles.text}>Hello World !</Text>
+        <StatusBar style="auto" />
+        <Home></Home>
     </View>
   );
 }
@@ -18,5 +18,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+      fontSize: 36
   },
 });
